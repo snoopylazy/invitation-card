@@ -150,8 +150,12 @@
     cardNatural = Math.min(window.innerWidth * 0.92, 640, (window.innerHeight * 0.84) / 0.78);
     card.style.setProperty('--cw', cardNatural + 'px');
     cardScale0 = (sw * 0.76) / cardNatural;
-    if (g) { g.set(card, { xPercent: -50, yPercent: -50, scale: cardScale0 }); }
-    else { card.style.transform = 'translate(-50%,-50%) scale(' + cardScale0 + ')'; }
+    if (g) { g.set(card, { xPercent: -50, yPercent: -50, scale: cardScale0, autoAlpha: 1 }); }
+    else {
+      card.style.transform = 'translate(-50%,-50%) scale(' + cardScale0 + ')';
+      card.style.opacity = '1';
+      card.style.visibility = 'visible';
+    }
   }
 
   /* ---------- logo animation (names reveal L→R, flourish draws, heart pops, butterfly flies in) ---------- */
@@ -266,6 +270,8 @@
   }
 
   /* ---------- boot ---------- */
+  if ('scrollRestoration' in history) { history.scrollRestoration = 'manual'; }
+  window.scrollTo(0, 0);
   applyLang();
   if (!g && !still) {
     console.warn('GSAP did not load; skipping the envelope animation.');
