@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="km">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>សិរីសួស្តីពិធីមង្គល · ពិធីឡើងគេហដ្ឋានថ្មី</title>
+  <meta name="theme-color" content="#0f1730">
+  <meta name="description" content="សូមគោរពអញ្ជើញ · ពិធីឡើងគេហដ្ឋានថ្មី និងចម្រើនអាយុវឌ្ឍនមង្គល · You are warmly invited">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="សិរីសួស្តីពិធីមង្គល · ពិធីឡើងគេហដ្ឋានថ្មី និងចម្រើនអាយុវឌ្ឍនមង្គល">
+  <meta property="og:description" content="សូមគោរពអញ្ជើញ · You are warmly invited">
+  <!-- Link preview image: after deploying, add
+       <meta property="og:image" content="https://YOUR-DOMAIN/og.jpg"> (1200x630, absolute URL) -->
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="data:,">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Kantumruy+Pro:wght@300;400;600&family=Moul&family=Moulpali&family=Pinyon+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/sections.css">
+</head>
+<body data-lang="kh" class="is-locked">
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="lg-foil" x1="0" y1="0" x2="1" y2=".35">
+        <stop offset="0" stop-color="#7b8696"/><stop offset=".25" stop-color="#c4ccd6"/>
+        <stop offset=".45" stop-color="#f6f8fc"/><stop offset=".62" stop-color="#c4ccd6"/>
+        <stop offset=".85" stop-color="#7b8696"/><stop offset="1" stop-color="#c4ccd6"/>
+      </linearGradient>
+      <linearGradient id="lg-ink" x1="0" y1="0" x2="1" y2=".35">
+        <stop offset="0" stop-color="#232d4d"/><stop offset=".5" stop-color="#55648a"/><stop offset="1" stop-color="#232d4d"/>
+      </linearGradient>
+    </defs>
+  </svg>
+
+  <header id="topbar">
+    <div class="tb-bg"></div>
+    <div class="tb-logo" data-logo="foil"></div>
+    <div class="tb-btns">
+      <button id="btn-music" class="tb-btn" type="button" hidden aria-label="Music"><span class="ico-music"></span></button>
+      <button id="btn-lang" class="tb-btn tb-lang" type="button" aria-label="Language"></button>
+    </div>
+  </header>
+
+  <main id="page">
+
+    <!-- 2. COVER -->
+    <section id="cover" aria-label="Cover">
+      <div class="cv-bg"></div>
+      <img class="cv-corner c-tl" src="assets/svg/corner-tl.svg" alt="">
+      <img class="cv-corner c-tr" src="assets/svg/corner-tr.svg" alt="">
+      <img class="cv-corner c-bl" src="assets/svg/corner-bl.svg" alt="">
+      <img class="cv-corner c-br" src="assets/svg/corner-br.svg" alt="">
+      <div class="cv-inner">
+        <div class="cv-col cv-a">
+          <img class="cv-crest" src="assets/svg/crest.svg" alt="">
+          <h1 class="cv-title"><span class="mask"><span class="foil moul shimmer" data-c="title"></span></span></h1>
+          <div class="cv-logo" data-logo="foil"></div>
+          <p class="cv-event" data-c="event"></p>
+          <p class="cv-en" data-raw="hostEn"></p>
+        </div>
+        <div class="cv-col cv-b">
+          <p class="cv-invite" data-i18n="invite"></p>
+          <p class="cv-guest" id="guestName" hidden></p>
+          <div class="cv-date" role="group" aria-label="Date">
+            <div class="dc"><b data-c="date.weekday"></b><i data-i18n="day"></i></div>
+            <div class="dc"><b data-c="date.day"></b><i data-i18n="date"></i></div>
+            <div class="dc"><b data-c="date.month"></b><i data-i18n="month"></i></div>
+            <div class="dc"><b data-c="date.year"></b><i data-i18n="year"></i></div>
+          </div>
+          <p class="cv-lunar" data-c="date.lunar"></p>
+          <p class="cv-time" data-c="date.time"></p>
+          <p class="cv-venue" data-c="venue.name"></p>
+        </div>
+        <a class="cv-cue" href="#words"><span data-i18n="scroll"></span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 9l7 7 7-7"/></svg></a>
+      </div>
+    </section>
+
+    <!-- 3. FORMAL WORDS + ARCHED PHOTO + HOSTS -->
+    <section id="words" class="sec sec-cream">
+      <img class="sec-corner sc-tl" src="assets/svg/corner-tl.svg" alt="">
+      <img class="sec-corner sc-tr" src="assets/svg/corner-tr.svg" alt="">
+      <img class="sec-corner sc-bl" src="assets/svg/corner-bl.svg" alt="">
+      <img class="sec-corner sc-br" src="assets/svg/corner-br.svg" alt="">
+      <div class="wrap">
+        <div class="arch-box" data-rv="arch"><div class="arch">
+          <div class="arch-in">
+            <img class="arch-lotus" src="assets/svg/lotus.svg" alt="">
+            <img class="arch-img" id="archImg" alt="" hidden>
+          </div>
+        </div></div>
+        <img class="divider ink" src="assets/svg/divider.svg" alt="" data-rv="fade">
+        <h2 class="sec-h"><span data-rv="mask"><span class="foil foil-ink moul" data-i18n="invite"></span></span></h2>
+        <p class="w-text" data-c="words" data-rv="up"></p>
+        <div class="hosts" data-rv="up">
+          <p class="hosts-label" data-c="hosts.label"></p>
+          <p class="host-line" id="hostL1"></p>
+          <p class="host-line" id="hostL2"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. COUNTDOWN -->
+    <section id="count" class="sec sec-navy">
+      <div class="marquee" aria-hidden="true"><div class="mq-track" id="mq"></div></div>
+      <div class="wrap">
+        <h2 class="sec-h"><span data-rv="mask"><span class="foil moul" data-i18n="cdTitle"></span></span></h2>
+        <div class="cd-grid" id="cdGrid" data-rv="up">
+          <div class="cd-cell"><b class="cd-n" data-u="d">០០</b><i data-i18n="cdDays"></i></div>
+          <div class="cd-cell"><b class="cd-n" data-u="h">០០</b><i data-i18n="cdHours"></i></div>
+          <div class="cd-cell"><b class="cd-n" data-u="m">០០</b><i data-i18n="cdMins"></i></div>
+          <div class="cd-cell"><b class="cd-n" data-u="s">០០</b><i data-i18n="cdSecs"></i></div>
+        </div>
+        <p class="cd-done" id="cdDone" data-i18n="cdDone" hidden></p>
+        <p class="cd-when" data-c="date.full"></p>
+      </div>
+    </section>
+
+    <!-- 6. PROGRAMME -->
+    <section id="program" class="sec sec-cream">
+      <div class="wrap">
+        <h2 class="sec-h"><span data-rv="mask"><span class="foil foil-ink moul" data-i18n="pgTitle"></span></span></h2>
+        <p class="pg-when" data-c="date.full" data-rv="fade"></p>
+        <p class="pg-start" data-c="program.start" data-rv="fade"></p>
+        <ol class="pg-list" id="pgList"><li class="pg-thread" aria-hidden="true"><i class="thread-fill" id="threadFill"></i></li></ol>
+      </div>
+    </section>
+
+    <!-- 9. GALLERY (hidden until photos are added) -->
+    <section id="gallery" class="sec sec-navy" hidden>
+      <div class="wrap wide">
+        <h2 class="sec-h"><span data-rv="mask"><span class="foil moul" data-c="gallery.heading"></span></span></h2>
+        <p class="g-sub" data-c="gallery.sub" data-rv="fade"></p>
+        <div class="g-grid"></div>
+      </div>
+    </section>
+
+    <!-- 10. VENUE -->
+    <section id="venue" class="sec sec-navy">
+      <div class="wrap">
+        <img class="sec-crest" src="assets/svg/crest.svg" alt="" data-rv="fade">
+        <h2 class="sec-h"><span data-rv="mask"><span class="foil moul" data-i18n="venueTitle"></span></span></h2>
+        <p class="vn-name" data-c="venue.name" data-rv="up"></p>
+        <p class="vn-addr" data-c="venue.address" data-rv="up"></p>
+        <div class="vn-mapbox" data-rv="map"><div class="vn-map" id="vnMap"></div></div>
+        <div class="vn-btns" data-rv="up">
+          <a class="btn" id="btnMaps" target="_blank" rel="noopener" data-i18n="openMaps"></a>
+          <button class="btn btn-ghost" id="btnIcs" type="button" data-i18n="saveCal"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- 12. THANK YOU -->
+    <section id="thanks" class="sec sec-navy sec-last">
+      <div class="wrap">
+        <div class="candles" id="candles" aria-hidden="true"></div>
+        <h2 class="th-title"><span data-rv="blur"><span class="foil moul" data-i18n="thanksTitle"></span></span></h2>
+        <p class="th-text" data-c="thanks" data-rv="up"></p>
+        <p class="th-text th-apology" data-c="apology" data-rv="up"></p>
+        <img class="divider" src="assets/svg/divider.svg" alt="" data-rv="fade">
+        <p class="sh-title" data-i18n="shareTitle" data-rv="fade"></p>
+        <div class="sh-row" id="shRow" data-rv="up"></div>
+        <div class="th-logo" data-logo="foil" data-rv="logo"></div>
+      </div>
+    </section>
+
+    <footer id="credit">
+      <img class="ft-div" src="assets/svg/divider.svg" alt="">
+      <p>Design inspired by <a href="https://SinThamonthy.me" target="_blank" rel="noopener">SinThamonthy</a></p>
+    </footer>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <div class="lb" id="lb" hidden role="dialog" aria-modal="true">
+    <button class="lb-x" type="button" id="lbX">✕</button>
+    <button class="lb-p" type="button" id="lbP">‹</button>
+    <button class="lb-n" type="button" id="lbN">›</button>
+    <div class="lb-stage"><img class="lb-img" id="lbImg" alt=""></div>
+    <div class="lb-count" id="lbCount"></div>
+  </div>
+
+  <!-- ENVELOPE SCREEN -->
+  <div id="intro" aria-label="Invitation envelope">
+    <div class="in-bg"></div><div class="in-vig"></div>
+    <div class="in-wrap" id="inWrap">
+      <h2 class="in-title"><span class="foil moul" data-c="title"></span></h2>
+      <div class="stage-wrap" id="tilt">
+        <div class="stage" id="stage">
+          <div class="env-back"></div>
+          <div class="env-card" id="card">
+            <div class="card-face">
+              <img class="cd-corner c-tl" src="assets/svg/corner-tl.svg" alt="">
+              <img class="cd-corner c-tr" src="assets/svg/corner-tr.svg" alt="">
+              <img class="cd-corner c-bl" src="assets/svg/corner-bl.svg" alt="">
+              <img class="cd-corner c-br" src="assets/svg/corner-br.svg" alt="">
+              <div class="cd-inner">
+                <img class="cd-crest" src="assets/svg/crest.svg" alt="">
+                <p class="cd-title foil foil-ink moul" data-c="title"></p>
+                <div class="cd-logo" data-logo="ink"></div>
+                <p class="cd-invite" data-i18n="invite"></p>
+              </div>
+            </div>
+          </div>
+          <div class="env-front" id="front">
+            <i class="pnl pl"></i><i class="pnl pr"></i><i class="pnl pb"></i>
+            <svg class="folds" viewBox="0 0 100 68" preserveAspectRatio="none" aria-hidden="true">
+              <path d="M0 0 L50 38 L0 68 M100 0 L50 38 L100 68 M0 68 L50 38 L100 68" class="fold-d"/>
+              <path d="M0 .5 L50 38.5 M100 .5 L50 38.5 M0 67.5 L50 37.5 L100 67.5" class="fold-l"/>
+            </svg>
+          </div>
+          <div class="flap-shadow" id="flapShadow"></div>
+          <div class="flap" id="flap">
+            <div class="ff ff-front">
+              <svg class="flap-line" id="flapLine" viewBox="0 0 1000 422" preserveAspectRatio="none" aria-hidden="true">
+                <path id="flapLineOuter"/><path id="flapLineInner"/>
+              </svg>
+              <div class="flap-logo" data-logo="foil"></div>
+            </div>
+            <div class="ff ff-back"></div>
+          </div>
+          <div class="seal-shadow" id="sealShadow"></div>
+          <button class="seal" id="seal" type="button" aria-label="Open the invitation">
+            <img src="assets/svg/wax-seal.svg" alt="">
+          </button>
+        </div>
+      </div>
+      <p class="in-hint" data-i18n="tap"></p>
+    </div>
+  </div>
+
+  <audio id="bgm" preload="none" loop></audio>
+
+  <script src="js/data.js"></script>
+  <script src="js/gallery.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script src="js/sections.js" defer></script>
+</body>
+</html>
